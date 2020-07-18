@@ -24,7 +24,7 @@ public class TabsLanguageTest {
             pages.openThisPage();
             Assertions.assertThat(pageTitle).contains(pages.getTitle().trim());
             Assertions.assertThat(pageTabHeader).contains(pages.getPageHeader().trim());
-            //System.out.println(menuExpected.contains(pages.getMenuTitle().trim()));
+            System.out.println(menuExpected.contains(pages.getMenuTitle().trim()));
             Assertions.assertThat(menuExpected).contains(pages.getMenuTitle().trim());
             System.out.println("Page tab header -> "+pages.getPageHeader()+" | Menu name -> "+pages.getMenuTitle()+" and PAGE TITLE  -> "+pages.getTitle()+" was successfully translated based on this language "+cursMD.getCurrentPageLanguage());
         });
